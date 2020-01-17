@@ -5,6 +5,8 @@
  */
 package github;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Javi
@@ -15,7 +17,13 @@ public class GitHub {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+        Scanner teclado=new Scanner(System.in);
+        System.out.println("Dame un número");
+        int numero=teclado.nextInt();
+        
+        for (int i = 0; i < numero; i++) {
+            System.out.println(numero*i);
+        }
     }
     
 }
